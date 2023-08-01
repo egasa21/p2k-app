@@ -13,7 +13,7 @@ const dataSchema = new mongoose.Schema({
     },
     divisi: {
         type: String,
-        required: true
+        
     },
     status: {
         type: String,

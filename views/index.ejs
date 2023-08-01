@@ -38,6 +38,9 @@
       </div>
     </div>
   </div>
+  <div class="footer">
+    <p>Created by Egg. © 2023</p>
+  </div>
 
   <!-- Add Bootstrap JavaScript and jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -49,7 +52,7 @@
       const nim = document.getElementById('nim').value;
 
       try {
-        const response = await fetch(`/api/data/${nim}`); 
+        const response = await fetch(`/api/data/${nim}`);
         const data = await response.json();
         console.log(data);
         if (data.error === 'Data not found') {
